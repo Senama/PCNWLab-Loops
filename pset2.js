@@ -6,6 +6,14 @@
     @example - removeNegatives([-3,-2,1,2,3,-4]); // [3,2,1,2,3,4]
 */
 
+// const removeNegatives = (arr) => {
+//     let copyArr = [];
+//     for (let i = 0; i < arr.length; i++){
+//         copyArr.push(Math.abs(arr[i]));
+//     }
+//     return copyArr
+// }
+// console.log(removeNegatives([-3,-2,1,2,3,-4]));
 /*
     @func findVal
     @param {array} arr
@@ -20,6 +28,17 @@
         findVal([1,2,3,4], 9); // -1
 */
 
+// const findval = (arr,anything) => {
+//     for (let i = 0; i < arr.length; i++){
+//         if (arr[i] === anything) {
+//             return i;
+//         }
+//     }
+//     return -1;
+// }
+// console.log(findval([1,2,3,4], 1));
+// console.log(findval([1,2,3,4], 4));
+// console.log(findval([1,2,3,4], 9));
 /*
     @func removeOdds
     @param {array} arr
@@ -31,6 +50,9 @@
         removeOdds([1,2,3,4]); // [2,4]
         removeOdds([1,"2",3,4]); // [4]
 */
+
+// const removeOdds = (arr) => {
+    
 
 /*
     @func addSquares
@@ -57,3 +79,13 @@
     @desc - find largest number in array
     @example - findMax([1,2,3,99,4]); // 99 
 */
+
+const findmax = (arr) => {
+    largestNum = [0];
+    for (i = 0; i < arr.length; i++){
+        if (arr[i] < largestNum) {
+            return largestNum;  
+    }
+
+    }
+}

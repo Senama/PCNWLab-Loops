@@ -7,6 +7,18 @@
     @example - average([1,2,3,4]); // 2.5
 */
 
+// const average = (arr) =>{
+//     let sum = 0;
+//     for (let i = 0; i < arr.length; i++){
+//         sum += arr[i];
+//         console.log(sum)
+//     };
+//     return sum/arr.length
+// }
+
+// console.log(average([1,2,3,4]));
+
+
 /*
     @func squareEach
     @param {array} arr
@@ -14,6 +26,24 @@
     @desc - square each value in array
     @example - squareEach([1,2,3,4]); // [1,4,9,16]
 */
+
+const squareEach = (arr) => {
+    const sum = arr.slice(0);
+    for (let i = 0; i < sum.length; i++){
+        sum[i] **= 2;
+     }
+     return sum;
+}
+console.log(squareEach([1,2,3,4]));
+
+
+// const squareEach2 = (arr) => {
+//     let result = [];
+//     for (let i = 0; i < arr.length; i ++) {
+//         result.push(arr[i]* arr[i]);
+//     }
+//     return result;
+// }
 
 /*
     @func averageSquare
@@ -29,6 +59,9 @@
         averageSquare([1,2,3,4); // 7.5
 */
 
+
+// const averageSquare = (arr)
+
 /*
     @func negateArr
     @param {array} arr
@@ -37,6 +70,8 @@
     @example
         negateArr([1,2,3,4]); // [-1,-2,-3,-4]
 */
+
+
 
 /*
     @func reverseArr
